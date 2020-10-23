@@ -1,0 +1,493 @@
+:root{
+    --head-mergin: 100px;
+    --head-image: 50px;
+    --head-left-margin: 10px;
+    --icon-diplay: none;
+    --lucida-font: 14px;
+    --lucida-font-title:18px;
+    --separate-color: #d6d6d6;
+    --blog-img-width: 20vw;
+
+}
+a{
+    text-decoration: none;
+    color: inherit
+}
+
+#head-nav{
+    display: grid;
+    grid-template-columns: 7fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 50px 10px 0 var(--head-left-margin);
+}
+.nav:hover{
+  color:#7510f7;
+  cursor: pointer;
+  transform: scale(1.1,1.1);
+}
+#head-nav .icon {
+    display: var( --icon-diplay);
+    float: right;
+  }
+#head-nav img{
+    height: var(--head-image);
+    width: auto;
+}
+
+#head-nav #contact{
+    display: flex;
+    height: 35px;
+    margin-top: -17px;
+    justify-content: center;
+    align-items: center;
+    border: solid #7510f7;
+    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+#head-nav #contact:hover {
+    background: #7510f7;
+    color: white;
+    cursor: pointer;
+
+}
+.responsive{
+    display:none !important;
+}
+#responsiveNav{
+    display:block;
+    justify-content: center;
+    text-align: center;
+    text-emphasis-color: #7510f7;
+    font: var(--lucida-font) Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 5px;
+    line-height: 60px;
+    padding: 20px 50px 20px 0;
+    box-shadow: 0 1px 2px #7510f7; 
+    color: #141c3a;   
+}
+/*=====*/
+
+#abt, .titles{
+    display: block;
+    width: 70%;
+    margin: var(--head-mergin) auto 0 20%;
+    font: 40px eurostile sans-serif;
+    font-weight: bold;
+}
+#abt #second{
+    font: 18px "Lucida Console", Monaco, monospace;
+    margin-left: 80px;
+}
+#home #img{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#home #img img{
+    border-radius: 40%;
+    border: solid #7510f7;
+    border-width: thick;
+    width: 10vw;
+
+}
+
+#home #image{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+
+/*ABOUT PAGE*/
+#about{
+    display: flex;
+    justify-content: center;
+    background-color: #7510f7;
+    color: white;
+    min-height: 700px;
+    z-index: 2;
+
+}
+#about #title{
+    display: block;
+    margin: 0 auto 30px 30%;
+    font: 24px eurostile sans-serif;
+
+}
+#about main{
+    margin-top: 100px;
+    width: 60%;
+}
+#about #content{
+    opacity:0.7;
+    font: 18px "Lucida Console", Monaco, monospace;
+    text-align: right;
+    line-height: 30px;
+}
+
+
+
+/* Experienece*/
+
+#experience{
+    margin: -200px 10vw 0 auto; 
+    z-index: 1;
+}
+
+#experience section{
+    box-shadow: 0 1px 2px #a29fa7; 
+    width: 33.5%;
+    padding: 20px 10px 0 50px;
+
+
+}
+#experience section img{
+    margin-top: 50px;
+    display:block;
+    margin-left: 40%;
+}
+
+#experience section h2{
+    margin-top: 40px;
+    display:block;
+    margin-left: 15%;
+}
+.exp-intro, .blog-smry{
+    font: var(--lucida-font) "Lucida Console", Monaco, monospace;
+
+}
+
+
+@media screen and (min-width: 1000px){
+    
+    #experience #community h2{
+        margin-left: -15px; 
+        margin-right: 0px
+    }
+}
+#experience section p span{
+    display: block;
+    font: 14px "Lucida Console", Monaco, monospace;
+    color: #141C3A;
+    opacity: 0.5;
+
+}
+#experience section h4, .title4{
+    color:#7510f7;
+    display: flex;
+    margin-top: 30px;
+    margin-left: -50px;
+    font-size: var(--lucida-font-title);
+    justify-content: center;
+}
+.tools{
+    display:flex;
+    font: var(--lucida-font) "Lucida Console", Monaco, monospace;
+    justify-content: center;
+    margin:  -5px 0 0 -50px;
+    color: #141C3A;
+    opacity: 0.5;
+}
+.frameworks{
+    display:block;
+    list-style: none;
+    font: var(--lucida-font) "Lucida Console", Monaco, monospace;
+    margin:  -5px 0 0 -100px;
+    color: #141C3A;
+    opacity: 0.5;
+
+}
+
+.frameworks li{
+    display: flex;
+    justify-content: center;
+}
+.break{
+    margin-top: 50px;
+    height:0.1px;
+    border: solid  #c8c6ca;
+}
+.size-80vw{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0 1px 2px #a29fa7; 
+    border-radius: 10px;
+    width:81vw;
+    margin: 30px 10vw 0 auto; 
+    z-index: 1;
+    background-color: white;
+}
+
+
+/* Blog*/
+.blog-head{
+    display: flex !important;
+    justify-content: center;
+    margin-top: 50px !important;
+}
+.blog-sub-head{
+    font: var(--lucida-font) "Lucida Console", Monaco, monospace;
+    display: flex !important;
+    justify-content: center;
+    margin-top: 30px !important;
+    font-size: var(--lucida-font) !important;
+    /* background-color: #7510f7; */
+}
+
+.blog-container, .porto-container{
+    min-height: 40vh;
+    width: 70vw !important;
+    margin: 30px 15.5vw 0 auto; 
+}
+.projects{
+    display: flex;
+}
+
+.blogs div, .projects div {
+    padding: 2rem 0 2rem 5rem;
+    border-bottom: 1px solid var(--separate-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    max-height: 100%;
+}
+/* .blg-img{
+    border-radius: 1px thin;
+} */
+.blg-img{
+    display: flex ;
+    flex-direction: row !important;
+    justify-content: center;
+    border-right: 1px solid var(--separate-color);
+    width: auto;
+}
+.blg-img img{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: -3px -1px 3px grey;
+    max-width: var(--blog-img-width) !important;
+    height:auto;
+
+
+}
+.blog-link{
+    border: solid #7510f7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: var(--lucida-font);
+    color: #7510f7;
+    width: 90%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  top: 48%;
+
+  width: auto;
+  margin-top: 130px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: solid #7510f7;
+  height: 25px
+}
+.prev {
+  left: -68.5vw;
+}
+.next {
+  right: -5vw;
+}
+
+
+
+
+@media screen and (max-width: 980px){
+
+    :root{
+        --head-mergin: 400px;
+        --head-image: 150px;
+        --head-left-margin: 30px;
+        --icon-diplay: block;
+        --lucida-font: 36px;
+        --lucida-font-title: 46px;
+        --blog-img-width: 60vw;
+
+    }
+
+
+    #head-nav .nav:not(:first-child) {display: none;}
+    #head-nav #contact{
+        display: flex;
+        height: 70px;
+        width: 200px;
+        margin: 20px -100px 0 0;
+        justify-content: center;
+        align-items: center;
+        border: solid #7510f7;
+        border-radius: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+    }
+    #head-nav .icon{
+        position: absolute;
+        margin: 30px 0 0 calc(80vw);
+    }
+    #head-nav .icon i{
+        font-size: 60px;
+        color: #7510f7;
+    }
+
+    /*responsive nav class*/
+
+
+    #abt, .titles{
+        display: block;
+        width: 80%;
+        margin: var(--head-mergin) auto 0 12%;
+        font: 60px eurostile sans-serif;
+        font-weight: bold;
+    }
+    #abt #second{
+        margin-left: 50px;
+    }
+    .no-mobile{
+        display:none;
+    }
+    #home #img img{
+        border: solid #7510f7;
+        border-width: thick;
+        width: 35vw;
+        height: auto;
+    }
+    #home #image {
+        margin-top: 200px;
+
+    }
+    #home #image img{
+        width: 85%;
+        height: auto;
+    }
+    /*about*/
+    #about{
+        display: flex;
+        justify-content: center;
+        background-color: #7510f7;
+        color: white;
+        min-height: 700px;
+        z-index: 2;
+        padding-bottom: 100px;
+    
+    }
+    #about #title{
+        display: block;
+        margin: 0 auto 0 20%;
+        font: 40px eurostile sans-serif;
+    }
+
+    #about main{
+        margin-top: 100px;
+        width: 80%;
+    }
+    #about #content{
+        opacity:0.7;
+        font: 36px "Lucida Console", Monaco, monospace;
+        text-align: right;
+        line-height: 35px;
+    }
+    #about #content span{
+        display: block;
+    }
+
+    /*End about*/
+
+    /*Experience*/
+   #experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 2px #a29fa7; 
+    border-radius: 10px;
+    width:95vw;
+    margin: -100px 2vw 0 auto; 
+    z-index: 1;
+    background-color: white;
+}
+
+strong{
+    opacity: 8 !important;
+}
+
+#experience section{
+    box-shadow: 0 1px 2px #a29fa7; 
+    width: 100%;
+    padding: 20px 20px 0 20px
+}
+
+#experience section img{
+    margin-top: 50px;
+    display:block;
+    width: 150px;
+    margin-left: 40%;
+}
+#experience section h2{
+display: flex;
+justify-content: center;
+font-size: 48px;
+margin-left: -8%;
+
+}
+#experience section p span{
+    font: 15px "Lucida Console", Monaco, monospace;
+}
+
+.exp-1{
+    display: block;
+    margin-left: 5%;
+}
+
+.blogs, .projects {
+    flex-direction: column;
+}
+
+.blog-container, .porto-container{
+    min-height: 35vh;
+}
+
+.blogs div, .projects div {
+    border-bottom: 0px solid var(--separate-color);
+    width: 100%;
+    max-height: 100%;
+}
+.blg-img img{
+    width: var(--blog-img-width);
+}
+.blg-img {
+    border-right: none;
+}
+.prev, .next{
+    margin-top: 300px;
+    
+}
+.prev{
+    left: -70vw;
+}
+
+
+
+
+   /*=End experience=*/ 
+
+    
+}
+
